@@ -64,7 +64,7 @@ document.addEventListener('alpine:init', () => {
                 return
             }
             if (action === "+" || action === "-" || action === "/" || action === "*") {
-                this.calculator.execute(operation)
+                this.calculator.execute(this.operation)
                 this.operation = this.textToOperation(action, this.calculator.current)
                 this.calculator.current = 0
                 return
